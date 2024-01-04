@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Shell.NavBarIsVisible="False"
+             x:Class="RemoteControl.MainPage"
+             >
+
+    <VerticalStackLayout Spacing="25" Padding="30,0" VerticalOptions="Start">
+        <!--<Image Source="ItronIcon.jpg" HeightRequest="150" WidthRequest="150"></Image>-->
+
+        <VerticalStackLayout Padding="0,10">
+            <!--<Image Source="appicon.svg" HeightRequest="150" WidthRequest="150"></Image>-->
+            <Label Text="Hakathon 2024" FontSize="35" FontAttributes="Bold" TextColor="OrangeRed" HorizontalTextAlignment="Center" />
+        </VerticalStackLayout>
+        
+        <VerticalStackLayout>
+            <!--<Image Source="appicon.svg" HeightRequest="150" WidthRequest="150"></Image>-->
+            <Label Text="Login to RemoteControl account" FontSize="20" FontAttributes="Bold" TextColor="DarkCyan" HorizontalTextAlignment="Center" />
+        </VerticalStackLayout>
+
+
+        <StackLayout Orientation="Horizontal">
+
+            <Frame HasShadow="True" Margin="-20,0,0,0" Padding="0" BorderColor="Grey" BackgroundColor="FloralWhite" HeightRequest="45" WidthRequest="180" HorizontalOptions="FillAndExpand" CornerRadius="28">
+                <Entry x:Name="UserNameTxt" Margin="20,0,0,0" VerticalOptions="Center" Placeholder="User Name" Keyboard="Email"/>
+            </Frame>
+
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+
+            <Frame HasShadow="True" Margin="-20,0,0,0" Padding="0" BorderColor="Grey" BackgroundColor="FloralWhite" HeightRequest="45" WidthRequest="180" HorizontalOptions="FillAndExpand" CornerRadius="28">
+                <Entry x:Name="PasswordTxt" IsPassword="True" Margin="20,0,0,0" VerticalOptions="Center" Placeholder="Password"  Keyboard= "Email" />
+            </Frame>
+        </StackLayout>
+
+
+
+        <Button
+     x:Name="LoginBtn" Clicked="OnLogInClicked"
+     Text="Login" WidthRequest="100" CornerRadius="20" HorizontalOptions="Center" BackgroundColor="PaleVioletRed"/>
+
+        <Label x:Name="LoginErrorMsgLable" Text="Login Id/Password incorrect!" FontSize="18" TextColor="Red" HorizontalTextAlignment="Center" IsVisible="False"></Label>
+    </VerticalStackLayout>
+
+</ContentPage>
