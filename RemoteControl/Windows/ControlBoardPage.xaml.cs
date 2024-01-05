@@ -9,22 +9,22 @@ public partial class ControlBoardPage : ContentPage
 
     private void RemoteControlM1TurnOnBtnClicked(object sender, EventArgs e)
     {
-        RemoteControlM1Status.Text = "On";
+        RemoteControlM1Status.Text = "ON";
     }
 
     private void RemoteControlM1TurnOffBtnClicked(object sender, EventArgs e)
     {
-        RemoteControlM1Status.Text = "Off";
+        RemoteControlM1Status.Text = "OFF";
     }
 
     private void RemoteControlM2TurnOnBtnClicked(object sender, EventArgs e)
     {
-        RemoteControlM2Status.Text = "On";
+        RemoteControlM2Status.Text = "ON";
     }
 
     private void RemoteControlM2TurnOffBtnClicked(object sender, EventArgs e)
     {
-        RemoteControlM2Status.Text = "Off";
+        RemoteControlM2Status.Text = "OFF";
     }
 
     private void OnLogoutClicked(object sender, EventArgs e)
