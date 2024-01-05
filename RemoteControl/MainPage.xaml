@@ -9,13 +9,13 @@
         <!--<Image Source="ItronIcon.jpg" HeightRequest="150" WidthRequest="150"></Image>-->
 
         <VerticalStackLayout Padding="0,10">
-            <!--<Image Source="appicon.svg" HeightRequest="150" WidthRequest="150"></Image>-->
+            <Image Source="itronicon.jpg" HeightRequest="150" WidthRequest="150"/>
             <Label Text="Hakathon 2024" FontSize="35" FontAttributes="Bold" TextColor="OrangeRed" HorizontalTextAlignment="Center" />
         </VerticalStackLayout>
         
         <VerticalStackLayout>
             <!--<Image Source="appicon.svg" HeightRequest="150" WidthRequest="150"></Image>-->
-            <Label Text="Login to RemoteControl account" FontSize="20" FontAttributes="Bold" TextColor="DarkCyan" HorizontalTextAlignment="Center" />
+            <Label Text="RemoteControl"  BackgroundColor="DarkSlateGray" FontSize="22" FontAttributes="Bold" TextColor="White" HorizontalTextAlignment="Center" />
         </VerticalStackLayout>
 
 
@@ -37,7 +37,7 @@
 
 
         <Button
-     x:Name="LoginBtn" Clicked="OnLogInClicked"
+     x:Name="LoginBtn" Clicked="OnLogInClicked" FontAttributes="Bold"
      Text="Login" WidthRequest="100" CornerRadius="20" HorizontalOptions="Center" BackgroundColor="PaleVioletRed"/>
 
         <Label x:Name="LoginErrorMsgLable" Text="Login Id/Password incorrect!" FontSize="18" TextColor="Red" HorizontalTextAlignment="Center" IsVisible="False"></Label>
