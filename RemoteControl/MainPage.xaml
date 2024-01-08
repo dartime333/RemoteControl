@@ -8,8 +8,8 @@
     <VerticalStackLayout Spacing="25" Padding="30,0" VerticalOptions="Start">
         <!--<Image Source="ItronIcon.jpg" HeightRequest="150" WidthRequest="150"></Image>-->
 
-        <VerticalStackLayout Padding="0,10">
-            <Image Source="itronicon.jpg" HeightRequest="150" WidthRequest="150"/>
+        <VerticalStackLayout Padding="0,2">
+            <Image Source="itronicon.jpg" HeightRequest="100" WidthRequest="100"/>
             <Label Text="Hakathon 2024" FontSize="35" FontAttributes="Bold" TextColor="OrangeRed" HorizontalTextAlignment="Center" />
         </VerticalStackLayout>
         

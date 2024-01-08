@@ -6,10 +6,10 @@
              >
    
         
-    <VerticalStackLayout Spacing="25" Padding="30,0" VerticalOptions="Start">
+    <VerticalStackLayout Spacing="20" Padding="30,0" VerticalOptions="Start">
 
-        <VerticalStackLayout Padding="0,10">
-            <Image Source="itronicon.jpg" HeightRequest="150" WidthRequest="150"/>
+        <VerticalStackLayout Padding="0,2">
+            <Image Source="itronicon.jpg" HeightRequest="100" WidthRequest="100"/>
             <Label Text="Hakathon 2024" FontSize="35" FontAttributes="Bold" TextColor="OrangeRed" HorizontalTextAlignment="Center" />
         </VerticalStackLayout>
         
@@ -18,34 +18,72 @@
         </StackLayout>
 
         <VerticalStackLayout>
-            <Label Text="Control Board" BackgroundColor="DarkSlateGray" FontAttributes="Bold" FontSize="30" TextColor="White" HorizontalTextAlignment="Center" />
+            <Label Text="Control Board" BackgroundColor="DarkSlateGray" FontAttributes="Bold" FontSize="25" TextColor="White" HorizontalTextAlignment="Center" />
         </VerticalStackLayout>
 
         <VerticalStackLayout>
-            
-            <Label Text="Meter Status" FontAttributes="Bold" FontSize="15" TextColor="DarkSlateGray" HorizontalTextAlignment="End" />           
-            
+            <HorizontalStackLayout>
+                <Label Text="Total no. of attemps:"></Label>
+                <Label x:Name="TotalNoOfAttemps" Text="0" FontAttributes="Bold" Padding="10,0,0,0"></Label>
+
+                <Label TextType="Html" Padding="70,0,0,0">
+                    <![CDATA[
+       <a href="" target="_blank">Buy Credits</a>.
+    ]]>
+                </Label>
+            </HorizontalStackLayout>    
             
         </VerticalStackLayout>
-        
+        <VerticalStackLayout>
+            <HorizontalStackLayout>
+                <Label Text="Total no. of attemps pending:"></Label>
+                <Label x:Name="TotalNoOfAttempsPending" Text="50" FontAttributes="Bold" Padding="10,0,0,0"></Label>
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Padding="0,0,0,-20">
+            <Label Text="Meter Status" FontAttributes="Bold" FontSize="15" TextColor="Green" HorizontalTextAlignment="End" />           
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Padding="5,0,0,-20">
+            <Label Text="Electricity Meter" FontSize="15" TextColor="DarkSlateGray" FontAttributes="Bold" HorizontalTextAlignment="Start" />
+        </VerticalStackLayout>
 
         <StackLayout Orientation="Horizontal">
 
+           
             <HorizontalStackLayout>
-                <Button x:Name="RemoteControlM1TurnOnBtn" FontAttributes="Bold" Clicked="RemoteControlM1TurnOnBtnClicked" Text="Meter1-On" WidthRequest="120" CornerRadius="20" HorizontalOptions="Center" BackgroundColor="Green"/>
+                <Button x:Name="RemoteControlM1TurnOnBtn" FontAttributes="Bold" Clicked="RemoteControlM1TurnOnBtnClicked" Text="ON" WidthRequest="120" CornerRadius="20" HorizontalOptions="Center" BackgroundColor="Green"/>
 
-                <Button x:Name="RemoteControlM1TurnOffBtn" FontAttributes="Bold" Clicked="RemoteControlM1TurnOffBtnClicked" Text="Meter1-Off" WidthRequest="120" CornerRadius="20" HorizontalOptions="Center" BackgroundColor="Red"/>
+                <Button x:Name="RemoteControlM1TurnOffBtn" FontAttributes="Bold" Clicked="RemoteControlM1TurnOffBtnClicked" Text="OFF" WidthRequest="120" CornerRadius="20" HorizontalOptions="Center" BackgroundColor="Red"/>
                 <Label x:Name="RemoteControlM1Status" Text="ON" FontSize="18" Padding="18,10,0,0" TextColor="Black" FontAttributes="Bold" HorizontalTextAlignment="End" />
             </HorizontalStackLayout>
         </StackLayout>
 
+        <VerticalStackLayout Padding="5,0,0,-20">
+            <Label Text="Gas Meter" FontSize="15" TextColor="DarkSlateGray" FontAttributes="Bold" HorizontalTextAlignment="Start" />
+        </VerticalStackLayout>
         <StackLayout Orientation="Horizontal">
 
             <HorizontalStackLayout>
-                <Button x:Name="RemoteControlM2TurnOnBtn" FontAttributes="Bold" Clicked="RemoteControlM2TurnOnBtnClicked" Text="Meter2-On" WidthRequest="120" CornerRadius="20" HorizontalOptions="Center" BackgroundColor="Green"/>
+                <Button x:Name="RemoteControlM2TurnOnBtn" FontAttributes="Bold" Clicked="RemoteControlM2TurnOnBtnClicked" Text="ON" WidthRequest="120" CornerRadius="20" HorizontalOptions="Center" BackgroundColor="Green"/>
 
-                <Button x:Name="RemoteControlM2TurnOffBtn" FontAttributes="Bold" Clicked="RemoteControlM2TurnOffBtnClicked" Text="Meter2-Off" WidthRequest="120" CornerRadius="20" HorizontalOptions="Center" BackgroundColor="Red"/>
+                <Button x:Name="RemoteControlM2TurnOffBtn" FontAttributes="Bold" Clicked="RemoteControlM2TurnOffBtnClicked" Text="OFF" WidthRequest="120" CornerRadius="20" HorizontalOptions="Center" BackgroundColor="Red"/>
                 <Label x:Name="RemoteControlM2Status" Text="ON" FontSize="18" Padding="18,10,0,0" TextColor="Black" FontAttributes="Bold" HorizontalTextAlignment="End" />
+            </HorizontalStackLayout>
+        </StackLayout>
+
+        <VerticalStackLayout Padding="5,0,0,-20">
+            <Label Text="Water Meter" FontSize="15" TextColor="DarkSlateGray" FontAttributes="Bold" HorizontalTextAlignment="Start" />
+        </VerticalStackLayout>
+        <StackLayout Orientation="Horizontal">
+
+            <HorizontalStackLayout>
+                <Button x:Name="RemoteControlM3TurnOnBtn" FontAttributes="Bold" Clicked="RemoteControlM3TurnOnBtnClicked" Text="ON" WidthRequest="120" CornerRadius="20" HorizontalOptions="Center" BackgroundColor="Green"/>
+
+                <Button x:Name="RemoteControlM3TurnOffBtn" FontAttributes="Bold" Clicked="RemoteControlM3TurnOffBtnClicked" Text="OFF" WidthRequest="120" CornerRadius="20" HorizontalOptions="Center" BackgroundColor="Red"/>
+                <Label x:Name="RemoteControlM3Status" Text="ON" FontSize="18" Padding="18,10,0,0" TextColor="Black" FontAttributes="Bold" HorizontalTextAlignment="End" />
             </HorizontalStackLayout>
         </StackLayout>
 
